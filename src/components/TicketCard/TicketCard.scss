@@ -1,0 +1,69 @@
+.ticket-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  min-width: 400px;
+}
+
+.ticket-title {
+  color: #333333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.ticket-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ticket-priority,
+.ticket-status {
+  display: flex;
+  align-items: center;
+}
+
+.priority-label,
+.priority-value {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.priority-label {
+  background-color: #f8d7da; /* Light red for priority label */
+}
+
+.priority-value {
+  background-color: #f5c6cb; /* Light red for priority value */
+}
+
+.priority-2 .priority-label,
+.priority-2 .priority-value {
+  background-color: #fff3cd; /* Light yellow for priority label and value */
+}
+
+.priority-3 .priority-label,
+.priority-3 .priority-value {
+  background-color: #d4edda; /* Light green for priority label and value */
+}
+
+.status-label {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.status-resolved {
+  background-color: #d4edda; /* Light green for resolved status */
+}
+
+.status-unresolved {
+  background-color: #f8d7da; /* Light red for unresolved status */
+}
+
+.ticket-description {
+  color: #666666;
+}
