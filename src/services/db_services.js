@@ -1,6 +1,6 @@
 export default async function fetchAllTickets() {
   try {
-    const response = await fetch(`http://localhost:3000/tickets`);
+    const response = await fetch(`https://dbtickets.alejorondon.com/tickets`);
     const jsonData = await response.json();
     return jsonData;
   } catch (error) {
@@ -9,7 +9,7 @@ export default async function fetchAllTickets() {
 }
 export async function createNewTicket(ticket) {
   try {
-    const response = await fetch('http://localhost:3000/tickets', {
+    const response = await fetch('https://dbtickets.alejorondon.com/tickets', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
